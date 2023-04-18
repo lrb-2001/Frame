@@ -1,0 +1,14 @@
+{
+  "AgileConfig": {
+    "appId": "frameCore", //应用ID
+    "secret": "frameCore", //密钥
+    "nodes": "http://lrb.icu:15000", //多个节点使用逗号分隔,
+    "name": "frameCore",
+    "tag": "tag",
+    "env": "DEV",
+    "httpTimeout": "100",
+    "cache": {
+      "directory": "Config"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Consul": {
+    "ConsulIP": "www.lrb.icu",
+    "ConsulPort": "8500",
+    "ServiceName": "FrameCore",
+    "Ip": "www.lrb.icu",
+    "Port": "8680",
+    "Weight": 1,
+    "LBStrategy": "WeightRoundRobin",
+    "FloderName": "consulConfig", //这两个节点可暂时忽略，是为了使用consul配置中心而设置的
+    "FileName": "config" //这两个节点可暂时忽略，是为了使用consul配置中心而设置的
+  }
+}

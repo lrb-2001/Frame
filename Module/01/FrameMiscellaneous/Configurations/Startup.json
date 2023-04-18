@@ -1,0 +1,28 @@
+{
+  "Startup": {
+    "ApiName": "Frame.CoreAPI",
+    "Version": "v1",
+    "ControllerXml": "FrameMiscellaneous.xml",
+    "ModelXml": "FrameModel.xml",
+    "Url": "https://www.lrb.icu",
+    "Email": "1536624135@qq.com",
+    "Cors": {
+      "PolicyName": "CorsIpAccess", //策略名称
+      "EnableAllIPs": true, //当为true时，开放所有IP均可访问。
+      // 支持多个域名端口，注意端口号后不要带/斜杆：比如localhost:8000/，是错的
+      // 注意，http://127.0.0.1:1818 和 http://localhost:1818 是不一样的
+      "IPs": "http://127.0.0.1:2364,http://localhost:2364"
+    },
+    "AppConfigAlert": {
+      "Enabled": true
+    },
+    "RedisMq": {
+      "Enabled": false //redis 消息队列
+    },
+    "MiniProfiler": {
+      "Enabled": true //性能分析开启
+    },
+    "Transient": "FrameService;FrameRepository", //服务注册，按 ; 隔开，此为程序集名称
+    "RoutePrefixName": "Frame" //路由前缀
+  }
+}

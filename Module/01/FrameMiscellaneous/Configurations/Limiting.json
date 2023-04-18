@@ -1,0 +1,6 @@
+{
+  "Limiting": { //限流
+    "limit": 10, //次数
+    "limitTime": 5 //时间（s）
+  }
+}
