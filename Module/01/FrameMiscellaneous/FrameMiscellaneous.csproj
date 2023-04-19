@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <!--发布时包含XML文件-->
-  <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
+  <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish" Condition="'$(PublishDir)' != ''">
     <ItemGroup>
       <DocFile Include="bin\Debug\$(TargetFramework)\$(RuntimeIdentifier)\$(TargetName).xml" />
       <DocFile Include="bin\Debug\$(TargetFramework)\$(RuntimeIdentifier)\FrameModel.xml" />
