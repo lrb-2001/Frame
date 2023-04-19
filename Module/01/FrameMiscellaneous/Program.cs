@@ -12,8 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseAgileConfig(e => Console.WriteLine($"configs {e.Action}"));
 GlobalConfig.frameCoreAgileConfig = GlobalConfigHelper.InitConfig(builder.Configuration);
 
-builder.WebHost.UseUrls("https://*:8680");
-
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
