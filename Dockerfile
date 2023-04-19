@@ -5,6 +5,8 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
+ADD railway.sh ./railway.sh
+
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["Module/01/FrameMiscellaneous/FrameMiscellaneous.csproj", "Module/01/FrameMiscellaneous/"]
